@@ -41,8 +41,8 @@ void main()
 { 
   vec3 P=(modelViewMatrix * vec4(vertex.xyz, 1.0)).xyz;
   vec3 N=normalize(normalMatrix * normal);
-  vec3 V=-P;
-  vec3 L=(lightPosition.xyz-P);
+  vec3 V=-P;	//vertex cap a càmara (la cam esta en 0 0 0 en eye space)
+  vec3 L=(lightPosition.xyz-P);	//vector cap a la font de llum
 
   frontColor=light(N, V, L);
   gl_Position = modelViewProjectionMatrix*vec4(vertex.xyz, 1.0);

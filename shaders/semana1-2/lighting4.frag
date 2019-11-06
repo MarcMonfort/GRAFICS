@@ -43,7 +43,8 @@ vec4 light(vec3 N, vec3 V, vec3 L) {
 void main()
 {
 	vec3 V=-P;
-	vec3 L=(lightPosition.xyz-P);
+	vec3 L=(lightPosition.xyz-P);	//vector cap a la font de llum
+
 
     fragColor=light(N, V, L);
 }

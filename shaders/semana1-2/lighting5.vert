@@ -27,15 +27,15 @@ out vec3 Lw;
 void main()
 {
 	//eye space
-    vec3 P = (modelViewMatrix * vec4(vertex.xyz, 1.0)).xyz;
-    Ne = normalMatrix * normal;
-	Ve = -P;
-	Le = (lightPosition.xyz-P);
+    vec3 P = (modelViewMatrix * vec4(vertex.xyz, 1.0)).xyz;	//vertex a eye space
+    Ne = normalMatrix * normal;	//normal a eye space
+	Ve = -P;	//vertex cap a càmara (la cam esta en 0 0 0 en eye space)
+	Le = (lightPosition.xyz-P);	//vector cap a la font de llum
 
 	//world
-	Nw = normal;
-	Vw = (viewMatrixInverse*vec4(0,0,0,1)).xyz - vertex.xyz;
-	Lw = (viewMatrixInverse*lightPosition).xyz - vertex.xyz;
+	Nw = normal;	//ya llega en model/world (en este caso "viewer" es lo mismo)
+	Vw = (viewMatrixInverse*vec4(0,0,0,1)).xyz - vertex.xyz;	//hay que transformar la posicion de camara (0,0,0) en eye space a su posicion en world space
+	Lw = (viewMatrixInverse*lightPosition).xyz - vertex.xyz;	//idem pero con lightPosition
 	
 
 

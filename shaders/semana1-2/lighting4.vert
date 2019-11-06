@@ -16,7 +16,7 @@ out vec3 N;
 void main()
 {
 
-    P=(modelViewMatrix * vec4(vertex.xyz, 1.0)).xyz;
-    N=normalize(normalMatrix * normal);
+    P=(modelViewMatrix * vec4(vertex.xyz, 1.0)).xyz;	//vertex a eye space
+    N=normalize(normalMatrix * normal);			//normal a eye space
     gl_Position = modelViewProjectionMatrix * vec4(vertex, 1.0);
 }
