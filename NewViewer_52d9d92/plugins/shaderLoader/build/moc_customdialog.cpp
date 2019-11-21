@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'customdialog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.6)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'customdialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.6. It"
+#error "This file was generated using the moc from 5.9.6. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -43,7 +43,7 @@ QT_MOC_LITERAL(2, 22, 0) // ""
 static const uint qt_meta_data_ColorButton[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -65,7 +65,7 @@ static const uint qt_meta_data_ColorButton[] = {
 void ColorButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<ColorButton *>(_o);
+        ColorButton *_t = static_cast<ColorButton *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->pickColor(); break;
@@ -75,14 +75,10 @@ void ColorButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject ColorButton::staticMetaObject = { {
-    &QPushButton::staticMetaObject,
-    qt_meta_stringdata_ColorButton.data,
-    qt_meta_data_ColorButton,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject ColorButton::staticMetaObject = {
+    { &QPushButton::staticMetaObject, qt_meta_stringdata_ColorButton.data,
+      qt_meta_data_ColorButton,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *ColorButton::metaObject() const
@@ -147,7 +143,7 @@ QT_MOC_LITERAL(9, 117, 4) // "exec"
 static const uint qt_meta_data_CustomDialog[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        7,   14, // methods
@@ -181,7 +177,7 @@ static const uint qt_meta_data_CustomDialog[] = {
 void CustomDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<CustomDialog *>(_o);
+        CustomDialog *_t = static_cast<CustomDialog *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->customBtnAccept(); break;
@@ -197,14 +193,10 @@ void CustomDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject CustomDialog::staticMetaObject = { {
-    &QDialog::staticMetaObject,
-    qt_meta_stringdata_CustomDialog.data,
-    qt_meta_data_CustomDialog,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+const QMetaObject CustomDialog::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_CustomDialog.data,
+      qt_meta_data_CustomDialog,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *CustomDialog::metaObject() const

@@ -1,2 +1,3 @@
-TARGET     = $$qtLibraryTarget(navigate-default1)
+TARGET     = $$qtLibraryTarget(navigatedefault)
+
 include(../common.pro)
