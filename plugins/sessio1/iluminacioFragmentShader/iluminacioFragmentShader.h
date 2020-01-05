@@ -5,6 +5,7 @@
 #include <QOpenGLShader>
 #include <QOpenGLShaderProgram>
 
+
 class IluminacioFragmentShader: public QObject, public Plugin
 {
 	Q_OBJECT
@@ -16,18 +17,12 @@ class IluminacioFragmentShader: public QObject, public Plugin
 	 void preFrame();
 	 void postFrame();
 
-	 void onObjectAdd();
-	 bool drawScene();
-	 bool drawObject(int);
-
-	 bool paintGL();
-
-	 void keyPressEvent(QKeyEvent *);
-	 void mouseMoveEvent(QMouseEvent *);
+	 
   private:
 	// add private methods and attributes here
-    QOpenGLShaderProgram* program;
-    QOpenGLShader *fs, *vs; 
+	QOpenGLShaderProgram* program;
+	QOpenGLShader *fs, *vs; 
+
 };
 
 #endif

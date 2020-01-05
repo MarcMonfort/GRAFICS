@@ -1,2 +1,2 @@
-TARGET     = $$qtLibraryTarget(iluminacioFragmentShader14)
+TARGET     = $$qtLibraryTarget(iluminacioFragmentShader18)
 include(../common.pro)

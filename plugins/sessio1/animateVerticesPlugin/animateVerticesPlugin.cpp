@@ -9,11 +9,11 @@ void AnimateVerticesPlugin::onPluginLoad()
 
     // Carregar shader, compile & link 
     vs = new QOpenGLShader(QOpenGLShader::Vertex, this);
-    vs->compileSourceFile(glwidget()->getPluginPath()+"/../iluminacioFragmentShader/animate-vertices1.vert");
+    vs->compileSourceFile(glwidget()->getPluginPath()+"/../animateVerticesPlugin/animate-vertices1.vert");
     //cout << "vs" << endl;
 
     fs = new QOpenGLShader(QOpenGLShader::Fragment, this);
-    fs->compileSourceFile(glwidget()->getPluginPath()+"/../iluminacioFragmentShader/animate-vertices1.frag");
+    fs->compileSourceFile(glwidget()->getPluginPath()+"/../animateVerticesPlugin/animate-vertices1.frag");
     //cout << "fs" << endl;
 
     program = new QOpenGLShaderProgram(this);

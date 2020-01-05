@@ -1,17 +1,17 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'drawBoundingBox.h'
+** Meta object code from reading C++ file 'seleccioSimple.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../drawBoundingBox.h"
+#include "../seleccioSimple.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #include <QtCore/qplugin.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'drawBoundingBox.h' doesn't include <QObject>."
+#error "The header file 'seleccioSimple.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.12.6. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -21,25 +21,25 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_DrawBoundingBox_t {
+struct qt_meta_stringdata_SeleccioSimple_t {
     QByteArrayData data[1];
-    char stringdata0[16];
+    char stringdata0[15];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_DrawBoundingBox_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_SeleccioSimple_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_DrawBoundingBox_t qt_meta_stringdata_DrawBoundingBox = {
+static const qt_meta_stringdata_SeleccioSimple_t qt_meta_stringdata_SeleccioSimple = {
     {
-QT_MOC_LITERAL(0, 0, 15) // "DrawBoundingBox"
+QT_MOC_LITERAL(0, 0, 14) // "SeleccioSimple"
 
     },
-    "DrawBoundingBox"
+    "SeleccioSimple"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_DrawBoundingBox[] = {
+static const uint qt_meta_data_SeleccioSimple[] = {
 
  // content:
        8,       // revision
@@ -55,7 +55,7 @@ static const uint qt_meta_data_DrawBoundingBox[] = {
        0        // eod
 };
 
-void DrawBoundingBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void SeleccioSimple::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
     Q_UNUSED(_id);
@@ -63,25 +63,25 @@ void DrawBoundingBox::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject DrawBoundingBox::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject SeleccioSimple::staticMetaObject = { {
     &QObject::staticMetaObject,
-    qt_meta_stringdata_DrawBoundingBox.data,
-    qt_meta_data_DrawBoundingBox,
+    qt_meta_stringdata_SeleccioSimple.data,
+    qt_meta_data_SeleccioSimple,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *DrawBoundingBox::metaObject() const
+const QMetaObject *SeleccioSimple::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *DrawBoundingBox::qt_metacast(const char *_clname)
+void *SeleccioSimple::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_DrawBoundingBox.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_SeleccioSimple.stringdata0))
         return static_cast<void*>(this);
     if (!strcmp(_clname, "Plugin"))
         return static_cast< Plugin*>(this);
@@ -90,7 +90,7 @@ void *DrawBoundingBox::qt_metacast(const char *_clname)
     return QObject::qt_metacast(_clname);
 }
 
-int DrawBoundingBox::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int SeleccioSimple::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     return _id;
@@ -105,12 +105,11 @@ static constexpr unsigned char qt_pluginMetaData[] = {
     // "IID"
     0x02,  0x66,  'P',  'l',  'u',  'g',  'i',  'n', 
     // "className"
-    0x03,  0x6f,  'D',  'r',  'a',  'w',  'B',  'o', 
-    'u',  'n',  'd',  'i',  'n',  'g',  'B',  'o', 
-    'x', 
+    0x03,  0x6e,  'S',  'e',  'l',  'e',  'c',  'c', 
+    'i',  'o',  'S',  'i',  'm',  'p',  'l',  'e', 
     0xff, 
 };
-QT_MOC_EXPORT_PLUGIN(DrawBoundingBox, DrawBoundingBox)
+QT_MOC_EXPORT_PLUGIN(SeleccioSimple, SeleccioSimple)
 
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
