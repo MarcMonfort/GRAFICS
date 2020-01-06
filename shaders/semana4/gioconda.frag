@@ -6,8 +6,8 @@ out vec4 fragColor;
 uniform float time;
 uniform sampler2D sampler;
 
-const vec2 EYE=vec2(0.393, 1-0.348);
-const vec2 OFF=vec2(0.057, 1-0.172);
+const vec2 EYE=vec2(0.393, 0.652);
+const vec2 OFF=vec2(0.057, -0.172);
 
 void main() {
   vec2 texCoord=vtexCoord;

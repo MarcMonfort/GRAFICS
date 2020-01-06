@@ -7,6 +7,6 @@ in vec3 N;
 
 void main()
 {
-	vec3 N = normalize(N);
+	vec3 N = normalize(N);	//hace interpolacion, hay que volver a normalizar!
     fragColor = frontColor * N.z;
 }

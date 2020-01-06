@@ -11,5 +11,5 @@ out float x;
 
 void main() {
   gl_Position=modelViewProjectionMatrix*vec4(vertex, 1);
-  x=gl_Position.x/gl_Position.w+1;
+  x = (gl_Position.x/gl_Position.w) + 1;
 }

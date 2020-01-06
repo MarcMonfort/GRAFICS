@@ -22,29 +22,49 @@ uniform sampler2D frameMap1;
 }*/
 
 
-/*void main()
+void main()
 {
-	float slice=1.0/30;
-	int frame=0;//int(mod(time/slice, 48));
-	int x=frame%8;
-	int y=5-frame/8;
+	vec2 texCoord=vtexCoord;
+	texCoord.x /=8;
+	texCoord.y /=6;
+	
+	int POS = int(mod(time*30,48));
+	int x = POS%8;
+	int y = 5 - POS/8;//int(mod(time,6.0));
+	
+	texCoord.x += x/8.0;
+	texCoord.y += y/6.0;
 
-	vec2 texCoord=vtexCoord*vec2(1.0/8, 1.0/6);
-	texCoord.x+=0/8.0;
-	texCoord.y+=(5-2)/6.0;
 	fragColor=texture(explosion, texCoord);
 	fragColor*=fragColor.w;
-}*/
+}
 
+
+
+
+
+
+
+
+
+
+
+/*
 void main() {
   float slice=1.0/30;
   int frame=int(mod(time/slice, 48));
   int x=frame%8;
   int y=5-frame/8;
 
-  vec2 texCoord=vtexCoord*vec2(1.0/8, 1.0/6);
-  texCoord.x+=x/8.0;
-  texCoord.y+=y/6.0;
+  //vec2 texCoord=vtexCoord*vec2(1.0/8, 1.0/6);
+
+
+  //texCoord.x+=x/8.0;
+  //texCoord.y+=y/6.0;
+
+	  //texCoord.x+=x/8.0;
+  	//texCoord.y+=y/6.0;
+
   fragColor=texture(explosion, texCoord);
   fragColor*=fragColor.w;
-}
+}*/

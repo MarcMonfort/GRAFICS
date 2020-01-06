@@ -22,14 +22,18 @@ void main()
 	//if (vertex.y < 0.5) a = 0;	//mas costoso, pero va bien
 	mat3 rotate = mat3(vec3(1,0,0),vec3(0,cos(a),sin(a)),vec3(0,-sin(a),cos(a)));
 	mat4 transl = mat4(vec4(1,0,0,0),vec4(0,1,0,0),vec4(0,0,1,0),vec4(0,-1,0,1));
-	//mat4 inverse = mat4(vec4(1,0,0,0),vec4(0,1,0,0),vec4(0,0,1,0),vec4(0,1,0,1));
 
 	
 	vec4 V = vec4(vertex,1);
 	if (vertex.y >= 0.5) {	//mas eficiente que con el primer if
-	V = transl*V;
-	V = vec4(rotate*V.xyz,1);
-	V = inverse(transl)*V;
+
+		//V = transl*V;
+		V.y -= 1;
+
+		V = vec4(rotate*V.xyz,1);
+
+		//V = inverse(transl)*V;
+		V.y += 1;
 	}
 
 

@@ -8,4 +8,6 @@ uniform float time;
 void main() {
   if (x>time) discard;
   fragColor=vec4(0, 0, 1, 1);
+
+	//if (gl_FragCoord.x > time*100) discard; no controla tiempo
 }

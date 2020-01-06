@@ -12,7 +12,7 @@ uniform mat4 modelViewProjectionMatrix;
 uniform mat3 normalMatrix;
 
 uniform float time;
-uniform float speed;
+uniform float speed = 0.5;
 
 void main()
 {

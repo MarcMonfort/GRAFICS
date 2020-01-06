@@ -18,8 +18,9 @@ vec4 CYAN=vec4(0,1,1,1);
 vec4 BLUE=vec4(0,0,1,1);
 
 void main() {
-  gl_Position=modelViewProjectionMatrix*vec4(vertex, 1);
-  float y=2*((gl_Position.y/gl_Position.w)+1.0);	// gl_position.y/gl_position.w puede ir de -1 a 1. el .w es el tamaño maximo del viewport (?)
+  	gl_Position = modelViewProjectionMatrix*vec4(vertex, 1);
+  	float y=2*((gl_Position.y/gl_Position.w)+1.0);	// gl_position.y/gl_position.w puede ir de -1 a 1. el .w es el tamaño maximo del viewport (?) max 2(-1 -> 1) -> 2* 2 = 4
+
 	if (y<0) frontColor=RED;
 	else if (y<1) frontColor=mix(RED, YELLOW, fract(y));
 	else if (y<2) frontColor=mix(YELLOW, GREEN, fract(y));

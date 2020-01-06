@@ -14,7 +14,7 @@ uniform sampler2D grass2;
 
 void main() {
 	float f=texture(noise0, vtexCoord).r;
-	//vec4 frontColor=texture(grass2, vtexCoord);
+
 	fragColor = mix(texture(rock1, vtexCoord), texture(grass2, vtexCoord), f); 
 	//fragColor = vec4(f);
 

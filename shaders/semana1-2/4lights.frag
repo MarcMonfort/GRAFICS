@@ -14,6 +14,7 @@ uniform bool rotate=true;
 // P és la posició 
 // lightPos és la posició de la llum
 // lightColor és el color de la llum
+
 vec4 light(vec3 V, vec3 N, vec3 P, vec3 lightPos, vec3 lightColor) {
 	const float shininess=100.0;
 	const float Kd=0.5;
