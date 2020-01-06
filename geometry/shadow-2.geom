@@ -40,7 +40,7 @@ void main( void )
 			float bottom = boundingBoxMin.y - 0.01;
 			
 			gfrontColor = CYAN;
-			vec4 aux = vec4(C.x+R,bottom,C.z+R,1);
+			vec4 aux = vec4(C.x-R,bottom,C.z-R,1);
 			gl_Position = modelViewProjectionMatrix*aux;
 			EmitVertex();
 
@@ -55,7 +55,7 @@ void main( void )
     			EndPrimitive();
 
 
-			aux = vec4(C.x-R,bottom,C.z-R,1);
+			aux = vec4(C.x+R,bottom,C.z+R,1);
 			gl_Position = modelViewProjectionMatrix*aux;
 			EmitVertex();
 
