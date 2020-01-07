@@ -30,7 +30,7 @@ void main( void )
 	vec3 U=V1-V3;
 	vec3 V=V2-V3;
 	vec3 N = normalize(cross(U,  V));
-	vec3 N2 = (normalMatrix * N);	//para colo, pero ineficiente
+	vec3 N2 = (normalMatrix * N);	//para color, pero ineficiente
 	//HASTA AQUI
 
 

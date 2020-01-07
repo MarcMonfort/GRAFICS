@@ -9,17 +9,19 @@ void ShowDegree::onPluginLoad()
 
 	const Object &obj = scene()->objects()[0];
 	const vector<Vertex> &ver = obj.vertices();
-  int cnt[ver.size()];
-  memset(cnt, 0, sizeof cnt);
-  // do count
-  for (int i=0; i<(int)obj.faces().size(); ++i) {
-    const Face &face=obj.faces()[i];
-    for (int j=0; j<face.numVertices(); ++j)
-      ++cnt[face.vertexIndex(j)];
-  }
-  double t=0;
-  for (int i=0; i<(int)ver.size(); ++i) t+=cnt[i];
-  grau_mig=t/ver.size();
+  	int cnt[ver.size()];
+  	memset(cnt, 0, sizeof cnt);
+
+	  // do count
+	  for (int i=0; i<(int)obj.faces().size(); ++i) {
+	    const Face &face=obj.faces()[i];
+	    for (int j=0; j<face.numVertices(); ++j)
+	      ++cnt[face.vertexIndex(j)];
+	  }
+
+	  double t=0;
+	  for (int i=0; i<(int)ver.size(); ++i) t+=cnt[i];
+	  grau_mig=t/ver.size();
 
 	
 }
